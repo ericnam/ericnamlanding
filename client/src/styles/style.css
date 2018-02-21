@@ -5,6 +5,22 @@ body {
     user-select: none; /* Non-prefixed version, currently */
 }
 
+h1, h2, h3 {
+	font-family: 'Abel', sans-serif !important;
+}
+
+c1 {
+	color: #6642ff;
+}
+
+c2 {
+	color: #5be55b;
+}
+
+c3{
+	color: #fd2d2d;
+}
+
 .container {
 	position: relative;
 	width: 100%;
@@ -12,7 +28,17 @@ body {
 	margin: 0 auto;	
 	box-sizing: border-box;
 }
+.container-lg {
+	position: relative;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;	
+	box-sizing: border-box;
+}
 
+.navbar{
+	padding: 0 !important;
+}
 .navbar, 
 .navbar-item {
 	background-color: rgba(0,0,0,0) !important;
@@ -57,7 +83,6 @@ body {
 	margin-right: 10px !important;
 }
 
-
 @media (max-width: 479px){
 }
 
@@ -71,4 +96,73 @@ body {
 }
 
 @media (max-width: 991px){
+}
+
+.landing{
+	background-color: #fbfbfb;
+	height: 100vh;
+}
+.landing h1{
+	font-weight: normal;
+	font-size: 3em;
+}
+.landing .container{
+	padding: 0 24px 0 24px !important;
+}
+.landing .quick-info{
+	width: 600px;
+	float: right;
+	background-color: #313131;
+	margin-top: 50px;
+	color: white !important;
+	padding: 12px 24px 12px 24px;
+}
+.landing .quick-info .email{
+	width: 100%;
+	font-style: italic;
+}
+.landing .quick-info .email .email-value{
+	float: right;
+	-webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text; /* Non-prefixed version, currently */
+}
+
+
+.about{
+	background-color: #fbfbfb;
+	height: 100vh;
+	top: 0px !important;
+}
+.about h1{
+	font-weight: normal;
+}
+.about .container-lg{
+	padding-top: 40px;
+}
+.about .main {
+	background-color: white;
+	max-height: 600px;
+	width: 100%;
+	overflow: hidden;
+}
+.about .main-img {
+	height: 600px;
+	float: left;
+	margin-right: 50px;
+}
+.about .main-text {
+	padding: 25px;
+}
+
+@media (max-width: 900px){
+	.about .main {
+		max-height: 400px;
+	}
+	.about .main-img {
+		height: 400px;
+	}
+	.landing .main-text {
+	}
 }

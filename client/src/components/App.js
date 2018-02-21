@@ -3,7 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Navbar from './Navbar'
+import Landing from './Landing'
+import About from './About'
 
 class App extends Component {
 	render () {
@@ -11,7 +12,8 @@ class App extends Component {
 			<div> 
 				<BrowserRouter>
 					<MuiThemeProvider>
-						<Navbar />
+						<Landing />
+						<About />
 					</MuiThemeProvider>
 				</BrowserRouter>
 			</div> 
