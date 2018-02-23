@@ -35,7 +35,7 @@ export default class Navbar extends Component {
       		<div>
       			<div class="container">
       				<AppBar
-					    title="ERIC NAM /"
+					    title={"ERIC NAM /"}
 					    className="navbar"
 					    showMenuIconButton={false}
 					    // iconElementLeft={}

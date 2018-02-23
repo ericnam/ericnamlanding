@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Landing from './Landing'
-import About from './About'
+import Section from './Section'
+import Work from './Work'
 
 class App extends Component {
 	render () {
@@ -13,7 +14,9 @@ class App extends Component {
 				<BrowserRouter>
 					<MuiThemeProvider>
 						<Landing />
-						<About />
+						<Section />
+						<Work />
+						<Section />	
 					</MuiThemeProvider>
 				</BrowserRouter>
 			</div> 
