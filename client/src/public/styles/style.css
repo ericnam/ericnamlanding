@@ -40,19 +40,29 @@ c3{
 	margin: 0 auto;	
 	box-sizing: border-box;
 }
+
+
+
+
 .navbar {
 	padding: 0 !important;
+	position: fixed;
+	max-width: 1200px !important;
+	transition-duration: 0s !important;
+	background-color: #fbfbfb !important;
 }
-.navbar, 
-.navbar-item {
-	background-color: rgba(0,0,0,0) !important;
+.navbar ,
+.navbar-item{
 	font-family: 'Abel', sans-serif !important;
 	box-shadow: none !important;
 }
 .navbar h1{
+	/*background-color: #fbfbfb;*/
 	font-size: 30px !important;
 	color: #222 !important;
-	padding: 20px 0 20px 0 !important;
+	padding: 20px 0 0px 0 !important;
+	width: 20% !important;
+	height: 44px !important;
 }
 .navbar .navbar-item{
 	margin-top: 23px !important;
@@ -65,6 +75,12 @@ c3{
 	margin-top: 25px !important;
 	min-width: 50px !important;
 	display: none !important;
+}
+.navbar .right-nav{
+	margin-right: 50px;
+}
+.navbar .right-nav span{
+	color: #222 !important;
 }
 
 .nav-item-list.drawer{
@@ -87,6 +103,20 @@ c3{
 	margin-right: 10px !important;
 }
 
+.navbar.transparent{
+	background-color: transparent !important;
+	transition-duration: 0s !important;
+}
+.navbar.transparent.work-color h1,
+.navbar.transparent.work-color .right-nav span{
+	color: white !important;
+}
+.navbar.transparent.work-color.work-section
+{
+	background-color: #222 !important;
+}
+
+
 @media (max-width: 479px){
 }
 
@@ -103,7 +133,7 @@ c3{
 }
 
 .landing{
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 	-webkit-background-size: cover, auto;
     -moz-background-size: cover, auto;
     -o-background-size: cover, auto;
@@ -120,6 +150,8 @@ c3{
 .landing .profile {
 	max-width: 700px;
 	text-align: justify;
+	padding-bottom:0px;
+	padding-top: 90px;
 }
 .landing .profile p {
 	font-family: 'Abel', sans-serif !important;
@@ -195,6 +227,14 @@ c3{
 	border-top: 2px solid black;
 	position: relative;
 	min-height: 300px;
+}
+.work{
+	background-color: #222;
+	color: white;
+	min-height: 100vh;
+}
+.work hr{
+	background-color: white !important;
 }
 .section .section-header {
 	font-size: 2.2em;

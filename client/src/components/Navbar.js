@@ -19,7 +19,7 @@ export default class Navbar extends Component {
 
  	render() {
  		const rightNav = (
-			<div>
+			<div class="right-nav">
 		    	<FlatButton className="navbar-item" label="ABOUT" />
 		    	<FlatButton className="navbar-item" label="WORK" />
 		    	<FlatButton className="navbar-item" label="CONTACT" />
@@ -40,6 +40,7 @@ export default class Navbar extends Component {
 					    showMenuIconButton={false}
 					    // iconElementLeft={}
 					    iconElementRight={rightNav}
+					    style={{position: 'fixed'}}
 			  		/>
       			</div>
 	      		<Drawer width={250} openSecondary={true} open={this.state.open}>

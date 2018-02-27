@@ -14,9 +14,7 @@ class App extends Component {
 				<BrowserRouter>
 					<MuiThemeProvider>
 						<Landing />
-						<Section />
 						<Work />
-						<Section />	
 					</MuiThemeProvider>
 				</BrowserRouter>
 			</div> 

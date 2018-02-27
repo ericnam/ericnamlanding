@@ -16,50 +16,14 @@ export default class Section extends Component {
 		);
 
     	return (
-  			<div class="section">
-  				<div class="section-header">
-  					<div class="section-header-rotate">
-  						EXPERIENCE 
-  					</div>
-  				</div>
-
-  				<div class="container">
-  					<div class="section-content">
-  						<Subsection 
-  							title="PricewaterhouseCoopers" 
-  							header="Experienced Software Associate"
-  							subheader="Master Limited Partnerships"
-  							subsubheader="2012-2016"
-  							blurb={MISBlurb}
-  							width="350px"
-						/><Subsection 
-                title="Project ONYX" 
-                header="Software Intern"
-                subheader="Intel Austin"
-                subsubheader="2013-2015"
-                blurb={CSBlurb}
-                width="250px"
-            />
-						<Subsection 
-  							title="Intel Corporation" 
-  							header="Software Intern"
-  							subheader="Intel Austin"
-  							subsubheader="2013-2015"
-  							blurb={CSBlurb}
-  							width="250px"
-						/>
-            <Subsection 
-                title="Trepantech" 
-                header="Software Intern"
-                subheader="Shanghai Based Startup"
-                subsubheader="2013-2015"
-                blurb={CSBlurb}
-                width="250px"
-            />
-  					</div>
-  				</div>
-
-  			</div>
+  			<div class="work">
+    				
+    				<div class="container">
+            <br />
+            <br />
+            <br />
+            </div>
+        </div>
     	)
     }
 }

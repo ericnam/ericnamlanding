@@ -1,5 +1,6 @@
 // all of our routing information in index.js
-import './styles/style.css';
+import './public/styles/style.css';
+import './public/js/index.js'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
