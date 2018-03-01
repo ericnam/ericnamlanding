@@ -43,6 +43,29 @@ c3{
 
 
 
+.navbar-bar {
+	width: 100%;
+	background-color: #fbfbfb;
+	height: 74px;
+	position: fixed;
+	z-index: 1;
+}
+
+.navbar-bar.transparent,
+.navbar.transparent{
+	background-color: transparent !important;
+	transition-duration: 0s !important;
+}
+.navbar.work-color .title,
+.navbar.work-color .right-nav span{
+	color: white !important;
+}
+.navbar-bar.transparent.work-section,
+.navbar.transparent.work-color.work-section
+{
+	background-color: #222 !important;
+}
+
 
 .navbar {
 	padding: 0 !important;
@@ -56,14 +79,32 @@ c3{
 	font-family: 'Abel', sans-serif !important;
 	box-shadow: none !important;
 }
-.navbar h1{
+.navbar .title{
 	/*background-color: #fbfbfb;*/
 	font-size: 30px !important;
 	color: #222 !important;
-	padding: 20px 0 0px 0 !important;
+	padding: 20px 0 10px 0 !important;
 	width: 20% !important;
 	height: 44px !important;
 }
+.navbar .title .work-title{
+	display: none;
+	-webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+}
+.navbar .title .work-title.visible{
+	display: initial;
+	-webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+}
+
+
 .navbar .navbar-item{
 	margin-top: 23px !important;
 	border-radius: 0px !important;
@@ -103,18 +144,7 @@ c3{
 	margin-right: 10px !important;
 }
 
-.navbar.transparent{
-	background-color: transparent !important;
-	transition-duration: 0s !important;
-}
-.navbar.transparent.work-color h1,
-.navbar.transparent.work-color .right-nav span{
-	color: white !important;
-}
-.navbar.transparent.work-color.work-section
-{
-	background-color: #222 !important;
-}
+
 
 
 @media (max-width: 479px){
@@ -132,8 +162,17 @@ c3{
 @media (max-width: 991px){
 }
 
+.test {
+	min-height:78vh;
+	background-image: url("../img/background.jpg");
+	-webkit-background-size: cover, auto;
+    -moz-background-size: cover, auto;
+    -o-background-size: cover, auto;
+	background-size: cover, auto;
+}
+
 .landing{
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 	-webkit-background-size: cover, auto;
     -moz-background-size: cover, auto;
     -o-background-size: cover, auto;
@@ -150,8 +189,8 @@ c3{
 .landing .profile {
 	max-width: 700px;
 	text-align: justify;
-	padding-bottom:0px;
 	padding-top: 90px;
+	border-bottom: 1px solid black;
 }
 .landing .profile p {
 	font-family: 'Abel', sans-serif !important;
@@ -233,9 +272,62 @@ c3{
 	color: white;
 	min-height: 100vh;
 }
+.work .container{
+	padding: 90px 24px 0 24px;
+}
 .work hr{
 	background-color: white !important;
+	width: 100%;
 }
+.work a{
+	color: white;
+	text-decoration: none;
+}
+.work .header{
+	width: 100%;
+}
+.work .description-left p,
+.work .description-right p{
+	margin-bottom: 5px;
+}
+.work .description-left{
+	width:40%;
+	float: left;
+}
+.work .description-right{
+	width:40%;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+}
+
+@media (max-width: 479px){
+}
+
+@media (max-width: 767px){
+	.work .description-left,
+	.work .description-right{
+		width: 100%;
+		float: left;
+	}
+}
+
+@media (max-width: 991px){
+}
+
+.work .title{
+	font-size: 25px;
+	font-weight: bold;
+}
+.work .url{
+	font-size:20px;
+}
+.work .date{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+
 .section .section-header {
 	font-size: 2.2em;
 	background-color: lightgrey;

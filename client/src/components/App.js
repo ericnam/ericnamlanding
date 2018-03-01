@@ -13,8 +13,11 @@ class App extends Component {
 			<div> 
 				<BrowserRouter>
 					<MuiThemeProvider>
+						<div class="test">
+						</div>
 						<Landing />
 						<Work />
+						<Section />
 					</MuiThemeProvider>
 				</BrowserRouter>
 			</div> 

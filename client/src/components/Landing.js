@@ -23,13 +23,15 @@ export default class Landing extends Component {
 
     	return (
   			<div class="landing">
-	  				<Navbar />
+					<div class="navbar-bar">
+						<Navbar />
+					</div>
 	  				<div class="container">
 	  					<div class="profile">
 	  						<div class="personal-info">
-		  						<p>E / ericnam860@gmail.com</p>
-		  						<p>L / Dallas, TX</p>
-		  						<p>P / 940. 453. 9010</p>
+		  						<p>ericnam860@gmail.com</p>
+		  						<p>Dallas, TX</p>
+		  						<p>940. 453. 9010</p>
 	  						</div>
 
 

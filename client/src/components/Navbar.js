@@ -30,12 +30,20 @@ export default class Navbar extends Component {
 			    />
 			</div>
 		);	
+		
+		const title = (
+			<div class="title">
+				ERIC NAM / 
+				<span class="work-title"> WORK</span>
+				
+			</div>
+		);
 
     	return (
       		<div>
       			<div class="container">
       				<AppBar
-					    title={"ERIC NAM /"}
+					    title={title}
 					    className="navbar"
 					    showMenuIconButton={false}
 					    // iconElementLeft={}
