@@ -23,9 +23,7 @@ export default class Landing extends Component {
 
     	return (
   			<div class="landing">
-					<div class="navbar-bar">
-						<Navbar />
-					</div>
+					
 	  				<div class="container">
 	  					<div class="profile">
 	  						<div class="personal-info">
@@ -49,6 +47,11 @@ export default class Landing extends Component {
     	)
     }
 }
+
+
+//<div class="navbar-bar">
+						//<Navbar />
+					//</div>
 
 // <h1>Software <c1>Developer</c1>  </h1>
 //   					<h1>UI/UX <c1>Designer</c1> </h1>

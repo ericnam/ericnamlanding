@@ -6,6 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Landing from './Landing'
 import Section from './Section'
 import Work from './Work'
+import Navbar from './Navbar'
 
 class App extends Component {
 	render () {
@@ -13,7 +14,11 @@ class App extends Component {
 			<div> 
 				<BrowserRouter>
 					<MuiThemeProvider>
+						
 						<div class="test">
+							<div class="texture0">
+								hello
+							</div>
 						</div>
 						<Landing />
 						<Work />

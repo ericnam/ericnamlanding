@@ -163,20 +163,26 @@ c3{
 }
 
 .test {
-	min-height:78vh;
+	min-height:55vh;
 	background-image: url("../img/background.jpg");
 	-webkit-background-size: cover, auto;
     -moz-background-size: cover, auto;
     -o-background-size: cover, auto;
 	background-size: cover, auto;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+.texture0{
+	background: rgba(0,0,0,0.15);   
+  position: relative;
+  background-attachment: fixed;
+  min-height: 55vh;
+  height: auto;
 }
 
 .landing{
 	padding-bottom: 80px;
-	-webkit-background-size: cover, auto;
-    -moz-background-size: cover, auto;
-    -o-background-size: cover, auto;
-	background-size: cover, auto;
+	min-height: 38vh;
 }
 
 .landing h1{
