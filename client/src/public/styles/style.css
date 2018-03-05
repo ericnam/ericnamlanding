@@ -47,8 +47,8 @@ c3{
 	width: 100%;
 	background-color: #fbfbfb;
 	height: 74px;
-	position: fixed;
 	z-index: 1;
+	padding: 0 24px 0 24px !important;
 }
 
 .navbar-bar.transparent,
@@ -192,6 +192,10 @@ c3{
 	padding: 0 24px 0 24px !important;
 }
 
+.landing .main {
+	text-align: center;
+}
+
 .landing .profile {
 	max-width: 700px;
 	text-align: justify;
@@ -273,10 +277,11 @@ c3{
 	position: relative;
 	min-height: 300px;
 }
+
 .work{
 	background-color: #222;
 	color: white;
-	min-height: 100vh;
+	min-height: 200vh;
 }
 .work .container{
 	padding: 90px 24px 0 24px;
@@ -284,12 +289,20 @@ c3{
 .work hr{
 	background-color: white !important;
 	width: 100%;
+	float: left;
+	margin: 0;
 }
 .work a{
 	color: white;
 	text-decoration: none;
 }
+
+
 .work .header{
+	float: left;
+	width: 100%;
+}
+.work .description {
 	width: 100%;
 }
 .work .description-left p,
@@ -306,7 +319,26 @@ c3{
 	text-align: right;
 	font-weight: bold;
 }
-
+.work .content {
+	width: 100%;
+	float: left;
+}
+.work .content .tablet{
+	height: 460px;
+	width: 960px;
+	background-color: #343d46;
+	padding: 20px;
+	margin: 10px 0 30px 0;
+	border-radius: 12px;
+}
+.work .content .phone{
+	height: 400px;
+	width: 225px;
+	background-color: #343d46;
+	padding: 20px;
+	margin: 10px 0 30px 0;
+	border-radius: 12px;
+}
 @media (max-width: 479px){
 }
 
@@ -333,6 +365,8 @@ c3{
 	font-weight: bold;
 	margin: 10px 0 0 0;
 }
+
+
 
 .section .section-header {
 	font-size: 2.2em;

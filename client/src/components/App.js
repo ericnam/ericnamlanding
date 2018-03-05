@@ -15,14 +15,11 @@ class App extends Component {
 				<BrowserRouter>
 					<MuiThemeProvider>
 						
-						<div class="test">
-							<div class="texture0">
-								hello
-							</div>
+						<div class="navbar-bar">
+							<Navbar />
 						</div>
 						<Landing />
 						<Work />
-						<Section />
 					</MuiThemeProvider>
 				</BrowserRouter>
 			</div> 
@@ -31,3 +28,9 @@ class App extends Component {
 }
 
 export default connect(null, null)(App);
+
+// <div class="test">
+// 							<div class="texture0">
+// 								hello
+// 							</div>
+// 						</div>

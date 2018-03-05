@@ -23,8 +23,11 @@ export default class Landing extends Component {
 
     	return (
   			<div class="landing">
-					
 	  				<div class="container">
+	  					<div class="main">
+	  						<h1>Passionate About Technology & Design</h1>
+	  					</div>
+
 	  					<div class="profile">
 	  						<div class="personal-info">
 		  						<p>ericnam860@gmail.com</p>

@@ -5,7 +5,7 @@ export default class Subwork extends Component {
 
  	render() {	
     	return (
-			<div>
+			<div class="subwork">
 				<div class="header">
 					<div class="title">{this.props.title}</div>
 					<div class="url">
@@ -13,18 +13,24 @@ export default class Subwork extends Component {
 					</div>
 					<p class="date">{this.props.date}</p>
 				</div>
-				<div class="description-left">
-					<p>
-						{this.props.left}
-					</p>
-				</div>
-				<div class="description-right">
-					<p>{this.props.right}</p>
+				<div class="description">
+					<div class="description-left">
+						<p>
+							{this.props.left}
+						</p>
+					</div>
+					<div class="description-right">
+						<p>{this.props.right}</p>
+					</div>
 				</div>
 				<hr/>
-				
 				<div class="content">
-					{this.props.content}
+					<div class="tablet">
+						hello
+					</div>
+					<div class="phone">
+						hello
+					</div>
 				</div>
 			</div>
     	)

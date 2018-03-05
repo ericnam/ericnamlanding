@@ -22,29 +22,27 @@ export default class Work extends Component {
     	return (
 			
   			<div class="work">
-				<div class="container">
-					<Subwork 
-						title="01 / Project ONYX"
-						url="projectonyx.io"
-						date="2017"
-						left={onyxLeft}
-						right={onyxRight}
-						content={onyxContent}
-					/>
-					
-					<br />
-					<br />
-					
-					<Subwork 
-						title="02 / Emaily"
-						url=""
-						date="2017"
-						left={emailyLeft}
-						right={emailyRight}
-						content={emailyContent}
-					/>
+					<div class="container">
+						<Subwork 
+							title="01 / Project ONYX"
+							url="projectonyx.io"
+							date="2017"
+							left={onyxLeft}
+							right={onyxRight}
+							content={onyxContent}
+						/>
+						
+						
+						<Subwork 
+							title="02 / Emaily"
+							url=""
+							date="2017"
+							left={emailyLeft}
+							right={emailyRight}
+							content={emailyContent}
+						/>
+					</div>
 				</div>
-			</div>
     	)
     }
 }
