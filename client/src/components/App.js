@@ -12,22 +12,57 @@ class App extends Component {
 	render () {
 		return ( 
 			<div> 
-				<BrowserRouter>
-					<MuiThemeProvider>
-						
-						<div class="navbar-bar">
-							<Navbar />
+				<MuiThemeProvider>
+
+					<div class="texture0">
+					</div>
+
+
+					<div class="main-button"></div>
+					<div class="left-bar">
+						<div class="main-button"></div>
+
+						<div class="left-bar-content">
+							<div class="rotate">
+								<div class="navigator">ABOUT</div>
+								<div class="links">GITHUB</div>
+							</div>
 						</div>
-						<Landing />
-						<Work />
-					</MuiThemeProvider>
-				</BrowserRouter>
+					</div>
+
+					<div class="right-bar">
+					</div>
+
+					<div class="top-bar">
+						<div class="header">ERIC NAM</div>
+					</div>
+
+					<div class="bottom-bar">
+					</div>
+
+
+					<div class="content">
+					</div>
+
+					
+				</MuiThemeProvider>
 			</div> 
 		);
 	}
 }
 
 export default connect(null, null)(App);
+
+
+
+
+
+//<div class="navbar-bar">
+//							<Navbar />
+//						</div>
+//						<Landing />
+//						<Work />
+
 
 // <div class="test">
 // 							<div class="texture0">

@@ -1,5 +1,5 @@
 // all of our routing information in index.js
-import './public/styles/style.css';
+import './public/styles/stylesheet.css';
 import './public/js/index.js'
 import React from 'react';
 import ReactDOM from 'react-dom';

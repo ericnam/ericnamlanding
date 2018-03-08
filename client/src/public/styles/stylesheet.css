@@ -1,0 +1,126 @@
+body {
+	background-image: url("../img/nebula.jpg");
+	position: absolute;
+	-webkit-background-size: cover, auto;
+    -moz-background-size: cover, auto;
+    -o-background-size: cover, auto;
+	background-size: cover, auto;
+	background-attachment: fixed;
+	min-height: 100vh;
+	width: 100%;
+
+	color: white !important;
+	font-family: 'Ubuntu' !important;
+}
+
+:root{
+	--frame-bar-width: 50px;
+	--frame-bar-color: #7a725d;
+
+	/*--frame-bar-color: #cdc9c9;*/
+	--theme-font-color: #948c79;
+
+}
+
+.texture0{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.2);  
+	position: fixed;
+	z-index: 0;
+}
+
+.left-bar{
+	height: 100vh;
+	width: var(--frame-bar-width);
+	border-right: 1px solid var(--frame-bar-color);
+	z-index: 2;
+	position: fixed;
+	transition-duration: 0.3s;
+	left: 0;
+}
+.left-bar.collapsed{
+	left: -71px;
+	transition-duration: 0.3s;
+}
+
+.left-bar-content{
+	float: left;
+	position: absolute;
+  	transform-origin: 0 100%;
+	-webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+.left-bar-content .rotate{
+	width: 75vh;
+	float: left;
+	letter-spacing: 10px;
+	padding: 26px 0 26px 0;
+	-webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+.left-bar-content .rotate .navigator{
+	font-size: 12px;
+	float:right;
+	padding: 0 150px 0 0 ;
+}
+.left-bar-content .rotate .links{
+	float:left;
+}
+
+
+.main-button{
+	height: var(--frame-bar-width);
+	width: var(--frame-bar-width);
+	position: fixed;
+	border-bottom: 1px solid var(--frame-bar-color);
+	background-color: var(--frame-bar-color);
+	z-index: 5;
+}
+
+.top-bar{
+	height: var(--frame-bar-width);
+	z-index: 1;
+	position: fixed;
+	padding: 0 0 0 var(--frame-bar-width);
+	width: 100%;
+	border-bottom: 1px solid var(--frame-bar-color);
+}
+.top-bar .header{
+	color: white;
+	padding: 26px 0 26px 50px;
+	margin: 0;
+	letter-spacing: 15px;
+}
+.right-bar{
+	height: 100vh;
+	width: var(--frame-bar-width);
+	border-left: 1px solid var(--frame-bar-color);
+	z-index: 3;
+	position: fixed;
+	right: 0;
+}
+.bottom-bar{
+	height: var(--frame-bar-width);
+	padding: 0 var(--frame-bar-width) 0 var(--frame-bar-width);
+	width: 100%;
+	border-top: 1px solid var(--frame-bar-color);
+	z-index: 4;
+	position: fixed;
+	bottom: 0;
+}
+
+
+
+.content{
+	margin: 0 0 0 var(--frame-bar-width);
+	padding-top: var(--frame-bar-width);
+	height: 600vh;
+}
+
