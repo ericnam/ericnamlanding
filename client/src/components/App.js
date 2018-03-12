@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Landing from './Landing'
+import Frame from './Frame'
 import Section from './Section'
 import Work from './Work'
 import Navbar from './Navbar'
@@ -13,36 +13,40 @@ class App extends Component {
 		return ( 
 			<div> 
 				<MuiThemeProvider>
-
-					<div class="texture0">
-					</div>
-
-
-					<div class="main-button"></div>
-					<div class="left-bar">
-						<div class="main-button"></div>
-
-						<div class="left-bar-content">
-							<div class="rotate">
-								<div class="navigator">ABOUT</div>
-								<div class="links">GITHUB</div>
+				
+					<div class="navbar">
+						<div class="header">
+							<div class="header-content">ERIC NAM</div>
+						</div>
+						<div class="sections">
+							<div class="section0 menu-button">
+								<div class="section-header"><a class="icon"><i class="fa fa-chevron-down"></i></a></div>
+							</div>
+							<div class="menu">
+								<div class="section1">
+									<div class="section-header">WORK</div>
+								</div>
+								<div class="section2">
+									<div class="section-header">ABOUT</div>
+								</div>
+								<div class="section3">
+									<div class="section-header">CONTACT</div>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="right-bar">
+				
+					<div class="container">
+					
+						
+						
+						<div class="content">
+							Hello
+						</div>
+					
 					</div>
-
-					<div class="top-bar">
-						<div class="header">ERIC NAM</div>
-					</div>
-
-					<div class="bottom-bar">
-					</div>
-
-
-					<div class="content">
-					</div>
+					
+					
 
 					
 				</MuiThemeProvider>

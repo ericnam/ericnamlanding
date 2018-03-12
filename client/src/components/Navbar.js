@@ -34,8 +34,6 @@ export default class Navbar extends Component {
 		const title = (
 			<div class="title">
 				ERIC NAM / 
-				<span class="work-title"> WORK</span>
-				
 			</div>
 		);
 
