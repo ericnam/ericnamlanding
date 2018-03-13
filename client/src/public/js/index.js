@@ -1,14 +1,28 @@
 import $ from 'jquery';
 
 $(document).ready(function() {
-	$('.main-button').on('click', function() {
-		if ($('.left-bar').hasClass('collapsed')){
-			$('.left-bar').removeClass('collapsed');
-		}else {
-			$('.left-bar').addClass('collapsed');
+	$('.menu-button').on('click', function(){
+		if($('.menu').hasClass('visible')){
+			$('.menu').removeClass('visible');
+			//$('.menu').fadeOut('fast', 'swing');
+			
+		} else {
+			$('.menu').addClass('visible');
+			//$('.menu').fadeIn('fast', 'swing');
 		}
-
+		
 	});
+	
+	
+	
+	//$('.main-button').on('click', function() {
+		//if ($('.left-bar').hasClass('collapsed')){
+			//$('.left-bar').removeClass('collapsed');
+		//}else {
+			//$('.left-bar').addClass('collapsed');
+		//}
+
+	//});
 
 	// $(window).scroll(function() {
 	// 	var menu_pos = $('.navbar').offset().top;
